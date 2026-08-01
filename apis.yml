@@ -1,7 +1,24 @@
 aid: pocket-menu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pocket-menu.png
 name: Pocket Menu
-description: Pocket Menu is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Pocket Menu (Pocket Concierge / ポケットコンシェルジュ) is a Japanese fine-dining
+  restaurant reservation and payment service that curates high-quality restaurants
+  and lets diners book and pay for reservations online. It was surfaced as a portfolio
+  company of 500 Global and added to the API Evangelist network. The public surface
+  is a consumer web application (Ruby on Rails / React on Rails) at pocket-concierge.jp
+  with no published developer API, OpenAPI, SDK, or .well-known discovery documents
+  detected during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/pocket-menu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Restaurants
+- Reservations
+- Payments
+- Dining
+- Hospitality
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,10 @@ maintainers:
 common:
 - type: Website
   url: https://pocket-concierge.jp
+- type: DomainSecurity
+  url: security/pocket-menu-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
